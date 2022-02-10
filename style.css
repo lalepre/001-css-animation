@@ -1,0 +1,74 @@
+body {
+    background-image: url(night\ .jpeg);
+    min-height: 100vh;
+    background-size: cover;
+  }
+  .owl-container{
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    width: 120px;
+    animation: OwlAnimation 7s infinite;
+  }
+  .owl-container img{
+    width: 100%;
+  }
+  
+  @keyframes OwlAnimation {
+    0%{
+     top: 20%;
+     left: 0%;
+      transform: rotate(-30deg)
+    }
+    
+    30%{
+        left: 50%;
+        transform: rotate(60deg);
+
+    }
+
+    100%{
+        left:100%;
+        transform: rotate(180deg);
+        transform: rotate(-320deg)
+
+    }
+}
+  
+    .horse-container{
+        position: absolute;
+        left:40%;
+        top: 20%;
+        width: 150px;
+        animation: horseAnimation 7s forwards;
+      }
+      .horse-container img{
+        width: 100%;
+        transform: scaleX(-1);
+      }
+      
+      @keyframes horseAnimation {
+        0%{
+         top: 50%;
+         left: 25%;
+        width: 200px;
+          /* transform: rotate(-30deg) */
+        }
+/*         
+        30%{
+            left: 50%;
+            transform: rotate(60deg);
+    
+        } */
+    
+        100%{
+            top: 60%;
+            left:40%;
+            width: 500px;
+
+            /* transform: rotate(180deg);
+            transform: rotate(-320deg)
+     */
+        }
+      
+    
